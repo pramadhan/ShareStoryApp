@@ -1,0 +1,52 @@
+{
+  "name": "shareStory.",
+  "short_name": "shareStory",
+  "description": "Aplikasi berbagi cerita dengan foto, lokasi, dan fitur modern.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f8fa",
+  "theme_color": "#1976d2",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "public/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Upload Cerita",
+      "short_name": "Upload",
+      "description": "Upload cerita baru dengan foto dan lokasi",
+      "url": "#/upload",
+      "icons": [{ "src": "public/images/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Beranda",
+      "short_name": "Home",
+      "description": "Lihat daftar cerita",
+      "url": "#/",
+      "icons": [{ "src": "public/images/logo.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "public/images/screenshot-mobile.png",
+      "sizes": "375x667",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "public/images/screenshot-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
