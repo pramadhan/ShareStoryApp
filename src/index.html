@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/favicon.png">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta name="theme-color" content="#1976d2" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-to-content" tabindex="0">Skip to Content</a>
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">shareStory.</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/upload">Upload Cerita</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/login" id="loginNav">Login</a></li>
+            <li><a href="#/register" id="registerNav">Daftar</a></li>
+            <li><a href="#/" id="logoutNav" style="display:none">Logout</a></li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button">☰</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+    <footer class="footer container">
+      <p>&copy; 2025 shareStory. All rights reserved.</p>
+    </footer>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>
